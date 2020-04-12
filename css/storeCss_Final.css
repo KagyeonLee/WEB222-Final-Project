@@ -1,0 +1,961 @@
+/********************************************************************
+I declare that my assignment is wholly my own work in accordance with Seneca
+Academic Policy. No part of this assignment has been copied manually or
+electronically from any other source (including web sites) except for the
+information supplied by the WEB222 instructors and / or made available in this
+assignment for my use.
+I also declare that no part of this assignment has been distributed to other
+students.
+Name: Gangyeon Lee 158921171
+Dated: Apr 11, 2020
+********************************************************************/
+
+/********** Responsive **********/
+@media screen and (max-width: 414px) {
+    /** top **/
+    header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: auto;
+        position: relative;
+    }
+
+    div#topArea {
+        width: 414px;
+        line-height: 80px;
+        background-color: white;
+        position: relative;
+        /*border-bottom: #d5d8db solid 1px;*/ 
+    }
+
+    img#logo {
+        width: 176px;
+        height: 20px;
+        vertical-align: middle;
+        position: relative;
+        /*min-width: 0;*/
+    }
+
+    #menuWrapper {
+        overflow: auto;
+    }
+
+    /** Body container **/
+    body {
+        font-family: "Nunito";
+        width: 100%;
+        height: auto;
+        margin: 0;
+        overflow: auto;
+    }
+
+   div.container {
+        background-color: white;
+        padding-top: 20px;
+        width: 414px;
+        height: auto;
+        margin: 20px;
+        overflow: hidden;
+        padding-bottom: 60px;
+    }
+
+    /** navigation **/
+    div.navbar {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .navbar {
+        transition: height 0.5s;
+        height: 0px;
+    }
+
+    .navbar.active {
+        position: relative;
+        height: 224px;
+        
+    }
+    #logoLink{
+        position: absolute;
+        top: 0;
+        transform: translateX(50%);
+        right: 50%;
+    }
+    ul#nav{
+        padding: 0;
+    }
+    ul#nav li {
+        position: relative;
+        display: block;
+        line-height: 40px;
+        border-bottom: 1px solid #d5d8db;
+        padding: 4px;
+        text-align: center;
+        width: 100%;
+    }
+   
+    a#headerMenu {
+        position: relative;
+        float: right;
+        padding-right: 10px
+    }
+
+    a.navStyle {
+        text-decoration: none;
+        list-style: none;
+        color: #7b7e81;
+    }
+   
+    /** Title **/
+    div.element1 {
+        width: 414px;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.categoryTitle {
+        font-size: 20pt;
+        font-style: italic;
+        margin-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+    hr.categoryLine { 
+        display: block;
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-style: inset;
+        border-width: .5px;
+        border-color: #e9ecef
+    }
+    
+    /** Thumbnail **/
+    div.thumbnail {
+        width: 176px;
+        height: 400px;
+        margin-right: 20px;
+        float: left;
+        position: relative;
+    }
+
+    div.thumb {
+        width: 100%;
+    }
+
+    .thumbGrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: white;
+        padding: 40px;
+    }
+
+    img {
+        width: 176px;
+        height: 200px;
+        }
+
+    /** Product Title **/
+    div.productName {
+        width: 176px;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    span.pdt {
+        height: auto;
+    }
+
+    p.productTitle {
+        font-family: "Nunito";
+        color: #212224;
+        font-size: 12pt;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+    }
+
+    a.titleStyle {
+        text-decoration: none;
+        list-style: none;
+        color: #35383b;
+    }
+
+    p.price {
+        color: #676a6d;
+        text-align: center;
+        word-spacing: -4px;
+        margin: 0px;
+    }
+
+    span.dollarSign {
+        font-family: "Nunito";
+        font-size: 11px;
+        position: relative;
+        top: -.4em;
+    }
+
+    span.productPrice {
+        font-family: "Nunito";
+        font-size: 13pt;
+    }
+
+    span.productPrice2 {
+        font-family: "Nunito";
+        font-size: 10pt;
+        position: relative;
+        top: -.2em;
+    }
+
+    /********** Reflection **********/  
+    div.reflect {
+        width: 370px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        overflow: auto;   
+    }
+
+    div.questions h4 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 16pt;
+        font-family: "Nunito";
+        color: #35383b;
+    }
+
+    div.answers p {
+        margin-top: 0;
+        margin-bottom: 100px;
+        font-size: 14pt;
+        font-family: "Nunito";
+        color: #676a6d;
+        line-height: 50px;
+    }
+
+    /********** myinfo **********/
+    .myContainer{
+        width: 90%;
+        margin: auto;
+    }
+    form{
+        width: 100%;
+        overflow: auto;
+    }
+    div#wrapper {
+        width: 100%;
+        position: relative;
+        float: left;
+    }
+
+    /** Input Box **/
+    div.inputBox {
+        position: relative;
+        width: 100%;
+        display: table;
+        color: #7b7e81;
+        margin-bottom: 1.5em;
+    }
+
+    input.inputBoxes {
+        font-family: "Nunito";
+        color: #212224;
+        font-size: 11pt;
+    }
+
+    input[type=text], input[type=password], input[type=email] {
+        width: 100%;
+        height: 50px;
+        padding: 12px 20px;
+        margin-bottom: 1.5em;
+        display: inline-block;
+        border: 1px solid #d5d8db;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    div.sideContainer {
+        width: 100%;
+        float: left;
+        overflow: auto;
+        display: none;
+    }
+    
+    div.leftSidebar {
+        width: 100%;
+        height: 400px;
+        padding: 10px;
+        margin: auto;
+        float: left;
+        border: 1px solid #d5d8db;
+        text-align: center;
+        background-color: white;
+    }
+    
+    div.leftSidebar h5 {
+        margin: 0;
+        margin-top: 10px;
+        font-family: "Nunito";
+        font-size: 12pt;
+        color: #35383b;
+    }
+    
+    ul#errorList {
+        font-family: "Nunito";
+        font-size: 11pt;
+        color: #d15858;
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 1.5em;
+    }
+    
+    li {
+        margin-bottom: 20px;
+    }
+
+
+    hr.line { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: .5px;
+        border-color: #dfe2e5
+    }
+
+    /** Selction **/
+    p.selectTitle {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-family: "Nunito";
+        font-size: 16pt;
+        position: relative;
+    }
+
+    div.selection {
+        margin-bottom: 1.5em;
+        font-size: 12pt;
+        font-family: "Nunito";
+        overflow: auto;
+    }
+
+    /** Dropdown Menu **/
+    select#dropDownMenu {
+        width: 100%;
+        height: 50px;
+        /*margin: 1.5em;*/
+        background-color: white;
+        border: 1px solid #d5d8db;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: "Nunito";
+        color: #a3a6a9;
+        font-size: 18px;
+
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin-top: 20px;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        background-image: linear-gradient(45deg, transparent 50%, gray 30%), linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position: calc(100% - 20px) calc(1.4em + 2px), calc(100% - 15px) calc(1.4em + 2px), calc(100% - .5em) .5em;
+        background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+        background-repeat: no-repeat;
+    }
+
+
+    /** Radio Button **/
+    div#radioFont {
+        color: #85888b;
+        font-size: 11pt;
+        margin-top: 20px;
+        float: right;
+        width: 100%;
+    }
+
+    div.formclass input {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        margin-top: 20px;
+        box-sizing: border-box;
+        float: right;
+        border: 1px solid #d5d8db;
+        overflow: auto;
+    }
+
+    /** Submit Buttton **/
+    div.btnWrapper {
+        width: 20%;
+        padding: 0;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    div.btnWrapper button {
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        font-family: "Nunito";
+        color: white;
+        font-size: 10pt;
+        background-color: #6fdeb1;
+        border: 1px solid #64c49e;
+        margin: auto;
+    }
+
+    /** Footer **/
+    div.footer {
+        background: white;
+        border-top: #d5d8db solid 1px;
+        width: 100%;
+        min-width: 0;
+        bottom: 0;
+        margin: 0;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    p.footerCopy {
+        font: 11pt "Nunito";
+        color: #a3a6a9;
+        padding: 40px;
+    }
+
+    div.link {
+        width: 100%;
+        font: 11pt "Nunito";
+        color: #a3a6a9;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    a.gitlink {
+        text-decoration: none;
+    }
+
+    img.git {
+        width: 10px;
+        height: 20px;
+        min-width: 20px;
+        opacity: .5;
+        vertical-align: middle;
+    }/** Footer **/
+    div.footer {
+        background: white;
+        border-top: #d5d8db solid 1px;
+        width: 100%;
+        min-width: 0;
+        bottom: 0;
+        margin: 0;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    p.footerCopy {
+        font: 16pt "Nunito";
+        color: #a3a6a9;
+        padding: 40px;
+    }
+
+    div.link {
+        width: 100%;
+        font: 16pt "Nunito";
+        color: #a3a6a9;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    a.gitlink {
+        text-decoration: none;
+    }
+
+    img.git {
+        width: 10px;
+        height: 40px;
+        min-width: 40px;
+        opacity: .5;
+        vertical-align: middle;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    /** Outline **/
+    #headerMenu{
+        display: none;
+    }
+    #menuWrapper{
+        display: none;
+    }
+    body {
+        font-family: "Nunito";
+        width: 100%;
+        height: auto;
+        margin: auto;
+        overflow: auto;
+    }
+
+    /** top **/
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
+    div#topArea {
+        width: 100%;
+        line-height: 120px;
+        background-color: white;
+        position: fixed;
+        /*border-bottom: #d5d8db solid 1px;*/
+        
+    }
+
+    img#logo {
+        width: 240px;
+        height: 24px;
+        padding-left: 120px;
+        vertical-align: middle;
+        position: relative;
+        /*min-width: 0;*/
+    }
+
+    /** navigation **/
+    div.navbar {
+        position: relative;
+        overflow: hidden;
+        float: right;
+    }
+
+    nav ul {
+        padding-right: 120px;
+        padding-left: 0;
+        float: right;
+        margin: 0;
+    }
+
+    nav ul li {
+        padding: 10px;
+        display: inline;
+        font: 12pt "Nunito";
+        text-decoration: none;
+        text-align: center;
+    }
+
+    a.navStyle {
+        text-decoration: none;
+        list-style: none;
+        color: #7b7e81;
+    }
+
+    nav ul li a:hover {
+        /*color: #3f4245;*/
+        color: #64c49e;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /** Title **/
+    div.element1 {
+        width: 1000px;
+        padding-top: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    hr.categoryLine { 
+        display: block;
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: .5px;
+        border-color: #e9ecef
+    }
+
+    /** Body container **/
+    div.container {
+        background-color: white;
+        width: 1000px;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    div.myContainer {
+        background-color: white;
+        width: 1000px;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /********** Store Front **********/
+    p.categoryTitle {
+        font-size: 18pt;
+        font-style: italic;
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+
+    /** Thumbnail **/
+    div.thumbnail {
+        width: 230px;
+        height: 500px;
+        margin: 0;
+        padding-right: 26px;
+        float: left;
+        position: relative;
+    }
+
+    div.thumb {
+        width: 1030px;
+    }
+
+    .thumbGrid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: white;
+        padding: 40px;
+    }
+
+    img {
+        width: 230px;
+        height: 260px;
+        min-width: 200px;
+    }
+
+    /** Product Title **/
+    div.productName {
+        width: 230px;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    span.pdt {
+        height: auto;
+    }
+
+    p.productTitle {
+        font-family: "Nunito";
+        color: #212224;
+        font-size: 12pt;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;
+    }
+
+    a.titleStyle {
+        text-decoration: none;
+        list-style: none;
+        color: #35383b;
+    }
+
+    p.price {
+        color: #676a6d;
+        text-align: center;
+        word-spacing: -4px;
+        margin: 0px;
+    }
+
+    span.dollarSign {
+        font-family: "Nunito";
+        font-size: 11px;
+        position: relative;
+        top: -.4em;
+    }
+
+    span.productPrice {
+        font-family: "Nunito";
+        font-size: 13pt;
+    }
+
+    span.productPrice2 {
+        font-family: "Nunito";
+        font-size: 10pt;
+        position: relative;
+        top: -.2em;
+    }
+
+    /********** Reflection **********/  
+    div.reflect {
+        width: 1000px;
+        position: relative;
+        margin: auto;
+        overflow: auto;   
+    }
+
+    div.questions h4 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 16pt;
+        font-family: "Nunito";
+        color: #35383b;
+    }
+
+    div.answers p {
+        margin-top: 0;
+        margin-bottom: 100px;
+        font-size: 14pt;
+        font-family: "Nunito";
+        color: #676a6d;
+        line-height: 50px;
+    }
+
+
+    /********** My page **********/
+    div#wrapper {
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    /** Input Box **/
+    div.inputBox {
+        position: relative;
+        float: left;
+        display: table;
+        color: #7b7e81;
+        margin-bottom: 1.5em;
+    }
+
+    input.inputBoxes {
+        font-family: "Nunito";
+        color: #212224;
+        font-size: 11pt;
+    }
+
+    input[type=text], input[type=password], input[type=email] {
+        width: 500px;
+        height: 50px;
+        padding: 12px 20px;
+        margin-bottom: 1.5em;
+        display: inline-block;
+        border: 1px solid #d5d8db;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    /** Selction **/
+    p.selectTitle {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: "Nunito";
+        font-size: 11pt;
+        position: relative;
+    }
+
+    p.selectTitle {
+        font-family: "Nunito";
+        font-size: 14pt;
+        margin-bottom: 1.5em;
+    }
+
+    div.selection {
+        margin-bottom: 1.5em;
+        font-size: 12pt;
+        font-family: "Nunito";
+        overflow: auto;
+    }
+
+
+    .labelVertical {
+        float: left;
+        line-height: 45px;
+    }
+
+    /** Dropdown Menu **/
+    select#dropDownMenu {
+        width: 350px;
+        height: 50px;
+        /*margin: 1.5em;*/
+        background-color: white;
+        border: 1px solid #d5d8db;
+        border-radius: 5px;
+        font-family: "Nunito";
+        color: #a3a6a9;
+        font-size: 18px;
+
+        line-height: 1.5em;
+        padding: 0.5em 3.5em 0.5em 1em;
+        margin-left: 2em;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        
+        background-image: linear-gradient(45deg, transparent 50%, gray 30%), linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position: calc(100% - 20px) calc(1.4em + 2px), calc(100% - 15px) calc(1.4em + 2px), calc(100% - .5em) .5em;
+        background-size: 5px 5px, 5px 5px, 1.5em 1.5em;
+        background-repeat: no-repeat;
+
+        float: right;
+    }
+
+    /** Radio Button **/
+    div#radioFont {
+        color: #85888b;
+        font-size: 11pt;
+        float: right;
+    }
+
+    div.formclass {
+        float: right;
+        overflow: auto;
+        width: 80%;
+    }
+
+    /** Form **/
+    div.formclass input {
+        width: 350px;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+        box-sizing: border-box;
+        float: right;
+        border: 1px solid #d5d8db;
+        overflow: auto;
+    }
+
+    /** Submit Buttton **/
+    div.btnWrapper {
+        width: 20%;
+        padding: 0;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    div.btnWrapper button {
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        font-family: "Nunito";
+        color: white;
+        font-size: 10pt;
+        background-color: #6fdeb1;
+        border: 1px solid #64c49e;
+        margin: auto;
+    }
+
+    /** Left side bar **/
+    div.sideContainer {
+        width: 40%;
+        float: right;
+        overflow: auto;
+    }
+
+    div.leftSidebar {
+        width: 374px;
+        height: 400px;
+        padding: 10px;
+        margin: auto;
+        float: left;
+        border: 1px solid #d5d8db;
+        text-align: center;
+        background-color: white;
+    }
+
+    div.leftSidebar h5 {
+        margin: 0;
+        margin-top: 10px;
+        font-family: "Nunito";
+        font-size: 12pt;
+        color: #35383b;
+    }
+
+    ul#errorList {
+        font-family: "Nunito";
+        font-size: 11pt;
+        color: #d15858;
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 1.5em;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    hr.line { 
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: .5px;
+        border-color: #dfe2e5
+    }
+
+       /** Footer **/
+       div.footer {
+        background: white;
+        border-top: #d5d8db solid 1px;
+        width: 100%;
+        min-width: 0;
+        bottom: 0;
+        margin: auto;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    p.footerCopy {
+        font: 11pt "Nunito";
+        color: #a3a6a9;
+        padding: 20px;
+    }
+
+    div.link {
+        width: 100%;
+        font: 11pt "Nunito";
+        color: #a3a6a9;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+
+    a.gitlink {
+        text-decoration: none;
+    }
+
+    img.git {
+        width: 10px;
+        height: 20px;
+        min-width: 20px;
+        opacity: .5;
+        vertical-align: middle;
+    }
+
+}
+
+
